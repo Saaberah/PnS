@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ParkandSmile</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="style.css" type="text/css" media="all">
+<script type="text/javascript" src="jquery-1.4.2.js" ></script>
+<script type="text/javascript" src="prices.js" ></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/ie6_script_other.js"></script>
+<script type="text/javascript" src="js/html5.js"></script>
+<![endif]-->
+</head>
+<body id="page1">
+<!-- START PAGE SOURCE -->
+<div class="body2">
+  <div class="body7">
+    <div class="body3">
+      <div class="body4">
+        <div class="main">
+          <div class="body1"></div>
+          <header>
+            <nav>
+              <ul id="menu">
+                <li id="menu_active"><a href="index.html">Home</a></li>
+                <li><a href="biography.html">About</a></li>
+                <li><a href="price list.html">Price list</a></li>
+                <li><a href="booking.html">Bookings</a></li>
+                <li><a href="contacts.html">Contact Details</a></li>
+              </ul>
+            </nav>
+            <h1><a href="#" id="logo">Park and Smile Valet Services</a></h1>
+          </header>
+          <section id="content">
+            <div class="wrapper">
+              <div class="box_shadow">
+                <div class="box">
+                  <div class="wrapper">
+                    <div class="pad_right">
+
+                      <h2>Policies and Procedures</h2>
+                      <img src = "procedure1.PNG" width="270" height="270">
+                      <img src ="procedure2.PNG" width="270" height="270">
+                     
+          <form method="post" name="myemailform" action="form-to-email.php">
+                        <div class="container">
+                          <div class="panel panel-primary">
+                            <div class="panel-heading"><h2>Schedule an Appointment</h2></div>
+                              <div class="panel-body">
+                                 <div class="row">
+                                    <div class="col-md-6">
+                                       <div class="form-group">
+                                         <div class="name">
+											<label for='first_name'>First Name: </label><br>
+											<input type="text" name="first_name">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <div class="form-group">
+                                          	<label for='last_name'>Last Name: </label><br>
+											<input type="text" name="last_name">
+                                       </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                <div class='message'>
+                                 <div class="row">
+                                    <div class="col-md-6">
+                                       <div class="form-group">
+                                          <label  for='email'>Email</label>
+                                          <input type="text" class="form-control" name="email" id="email">
+                                       </div>
+                                    </div>
+
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                         <div class="form-group">		
+											<label for='contact_number'>Contact Number:</label> <br>
+											<input type="text" name="contact_number">
+
+                                         </div>
+                                      </div>
+
+                                      <div class="row">
+                                        <div class="col-md-6">
+                                           <div class="form-group">
+												<label for='vehicle'>Vehicle Make & Model:</label> <br>
+												<input type="text" name="vehicle">
+                                           </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <div class="form-group">
+												<label for='colour'>Vehicle Colour:</label> <br>
+												<input type="text" name="colour">
+											</div>
+                                          </div>
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                             <div class="form-group">
+												<label for='registration'>Vehicle Registration:</label> <br>
+												<input type="text" name="registration">
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-md-6">
+                                               <div class="form-group">
+													<label for='time_in'>Time and Date in:</label> <br>
+													<input type="text" name="time_in">
+                                               </div>
+                                            </div>
+        
+                                            <div class="row">
+                                              <div class="col-md-6">
+                                                 <div class="form-group">
+													<label for='time_out'>Time and Date out:</label> <br>
+													<input type="text" name="time_out">
+                                                 </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-md-6">
+                                                   <div class="form-group">
+                                                    <label for='return_flight'>Return Flight Details:</label> <br>
+													<input type="text" name="return_flight">
+                                                   </div>
+                                                </div>
+          
+    
+  
+                                    
+                                   
+                                </div>
+                                            </div>
+  <input type ="button" id="price" name="pbutton" value="Calculate Price" onclick="Prices()"/>
+                                <input type="submit" name="submit"class="btn btn-primary" value="Submit">
+                              </div>
+                           </div>
+                        </div>
+                      </form>
+                      <script language="JavaScript">
+                        // Code for validating the form
+                        // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+                        // for details
+                        var frmvalidator  = new Validator("myemailform");
+                        frmvalidator.addValidation("name","req","Please provide your name"); 
+                        frmvalidator.addValidation("email","req","Please provide your email"); 
+                        frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+                        </script>
+                        <p>
+                        <a href='http://www.html-form-guide.com/email-form/php-form-to-email.html'
+                        >PHP form to email article page</a>
+                        </p>
+                      
+                                        </div>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <br>
+          </section>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+
+
+            <br>
+
+            <br>
+
+            <br>
+
+            <br>
+
+            <br>
+
+            <br>
+
+            <br>
+         
+          
+          
+<footer>
+  <div class="footerlink">
+    <p class="lf">Copyright &copy; 2019 <a href="#">Park and Smile</a> - All Rights Reserved</p>
+    
+    <div style="clear:both;"></div>
+  </div>
+</footer>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- END PAGE SOURCE -->
+</body>
+</html>
